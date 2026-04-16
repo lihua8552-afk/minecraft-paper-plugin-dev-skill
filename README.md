@@ -1,30 +1,60 @@
 # Minecraft Paper Plugin Dev Skill for Cursor
 
-Build Paper/Bukkit plugins with safer reloads, cleaner edits, and fewer async mistakes.
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+![Cursor Skill](https://img.shields.io/badge/Cursor-Skill-blue)
+![Minecraft](https://img.shields.io/badge/Minecraft-Paper%20%7C%20Bukkit%20%7C%20Spigot-5b8c2a)
+![Java](https://img.shields.io/badge/Java-21%2B-orange)
+![Build Tool](https://img.shields.io/badge/Maven-friendly-c71a36)
+
+Build Minecraft Paper/Bukkit plugins with safer reloads, cleaner edits, and fewer async mistakes.
 
 A production-minded Cursor skill for Java plugin authors who want less guesswork, less metadata drift, and fewer broken server reloads.
 
-## Why people use it
+## Why this skill is useful
 
-- safer reload and hot-load flows
-- stronger async and main-thread guardrails
-- memory-leak and crash-risk checks
-- tighter edits with less file churn
-- warning-aware validation
-- better command, config, permission, and dependency consistency
+Most generic AI output is fine for quick snippets but weak on plugin lifecycle safety. This skill pushes Cursor toward safer Paper/Bukkit changes by enforcing patterns around:
+
+- reload-safe resource handling
+- async and main-thread boundaries
+- listener, task, and cache cleanup
+- `plugin.yml`, command, permission, and config consistency
+- warning-aware validation before calling work done
+
+## What it helps prevent
+
+- broken or duplicated reload behavior
+- leaked tasks, watchers, executors, and caches
+- async access to Bukkit main-thread-only APIs
+- drift between Java code and `plugin.yml`
+- noisy warning-heavy plugin updates
+- large, unnecessary file rewrites
 
 ## Best fit
 
-Paper, Bukkit, and Spigot plugin authors working with Java + Maven projects.
+Use this if you build or maintain:
 
-## Install
+- Paper plugins
+- Bukkit plugins
+- Spigot plugins
+- Java + Maven Minecraft plugin projects
+
+## Install in under a minute
 
 Copy `minecraft-paper-plugin-dev` into either:
 
 - `~/.cursor/skills/` for personal use
 - `.cursor/skills/` in a project repository
 
-## Prompt ideas
+Final structure should look like this:
+
+```text
+.cursor/
+  skills/
+    minecraft-paper-plugin-dev/
+      SKILL.md
+```
+
+## Example prompts
 
 Ask Cursor things like:
 
