@@ -6,13 +6,15 @@
 ![Java](https://img.shields.io/badge/Java-21%2B-orange)
 ![Build Tool](https://img.shields.io/badge/Maven-friendly-c71a36)
 
+> Built for Minecraft Paper/Bukkit/Spigot authors who want safer reloads, cleaner plugin updates, and fewer async-thread mistakes.
+
 Build Minecraft Paper/Bukkit plugins with safer reloads, cleaner edits, and fewer async mistakes.
 
 A production-minded Cursor skill for Java plugin authors who want less guesswork, less metadata drift, and fewer broken server reloads.
 
-## Why this skill is useful
+## Why it stands out
 
-Most generic AI output is fine for quick snippets but weak on plugin lifecycle safety. This skill pushes Cursor toward safer Paper/Bukkit changes by enforcing patterns around:
+Generic AI can write Java, but it often misses the Paper/Bukkit details that break real plugin projects. This skill pushes Cursor toward safer, production-ready changes by enforcing patterns around:
 
 - reload-safe resource handling
 - async and main-thread boundaries
@@ -38,12 +40,14 @@ Use this if you build or maintain:
 - Spigot plugins
 - Java + Maven Minecraft plugin projects
 
-## Install in under a minute
+## Quick install
 
 Copy `minecraft-paper-plugin-dev` into either:
 
 - `~/.cursor/skills/` for personal use
 - `.cursor/skills/` in a project repository
+
+Or clone this repository and copy the skill folder into your Cursor skills directory.
 
 Final structure should look like this:
 
